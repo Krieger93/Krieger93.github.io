@@ -1,6 +1,7 @@
 var i = 0;
 var txt = "Desarrollo Web"; /* el texto */
 var speed = 50; /* La duracion en milisegundos */
+var txth1 = "Gustavo Jejer [Portafolio]";
 
 function typeWriter() {
   if (i < txt.length) {
@@ -9,5 +10,5 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-
+document.getElementById("texto_principal").innerHTML = txth1;
 typeWriter();
