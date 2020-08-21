@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Desarrollo Web"; /* el texto */
+var txt = "Web Developer"; /* el texto */
 var speed = 50; /* La duracion en milisegundos */
 var txth1 = "Gustavo Jejer [Portafolio]";
 
