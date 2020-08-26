@@ -1,12 +1,6 @@
-html {
+html,
+body {
   box-sizing: border-box;
-  font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body,
@@ -24,6 +18,12 @@ ul {
   font-weight: normal;
 }
 
+body {
+  width: 1100px;
+  margin: auto;
+  background-color: white;
+}
+
 ol,
 ul {
   list-style: none;
@@ -35,7 +35,7 @@ img {
 }
 
 #logo_texto {
-  font-family: "Delius", cursive;
+  font-family: "Permanent Marker", cursive;
   color: rgb(68, 32, 136);
 }
 
@@ -65,7 +65,7 @@ header nav ul li a:hover {
   font-weight: 600;
 }
 
-#primera_vista {
+.primera_vista {
   position: relative;
   top: 10px;
   text-align: center;
@@ -89,27 +89,24 @@ header nav ul li a:hover {
 
 #conoceme {
   display: flex;
+  position: relative;
+  left: 80px;
+  top: 30px;
 }
 
 #conoceme img {
   position: relative;
-  bottom: 80px;
+  bottom: 70px;
   margin: 0 auto;
-  border-radius: 50%;
-  width: 250px;
+  border-radius: 10%;
+  width: 200px;
   height: 250px;
 }
 
-#conoceme2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  background-color: rgb(68, 32, 136);
-  color: white;
-  opacity: 0.8;
-  padding-bottom: 50px;
-}
-
-#conoceme2 h1 {
-  text-align: center;
-  margin: 10px;
+.text_Conoceme {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  right: 150px;
 }
