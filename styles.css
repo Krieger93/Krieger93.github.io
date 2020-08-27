@@ -73,11 +73,20 @@ header nav ul li a:hover {
 }
 
 #texto_principal {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Alata", sans-serif;
   font-size: 40px;
   color: rgb(68, 32, 136);
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.titulo_proyectos {
+  font-family: "Alata", sans-serif;
+  font-size: 40px;
+  color: rgb(68, 32, 136);
+  font-weight: 600;
+  margin-top: 150px;
+  text-align: center;
 }
 
 #parrafo_principal {
