@@ -119,3 +119,7 @@ header nav ul li a:hover {
   position: relative;
   right: 150px;
 }
+
+.container {
+  display: grid;
+}
