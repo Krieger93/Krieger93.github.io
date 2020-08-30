@@ -41,7 +41,7 @@ img {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 1.6rem;
   align-items: flex-end;
 }
@@ -67,9 +67,8 @@ header nav ul li a:hover {
 
 .primera_vista {
   position: relative;
-  top: 10px;
   text-align: center;
-  padding: 100px 0px;
+  padding-top: 120px;
 }
 
 #texto_principal {
@@ -93,13 +92,12 @@ header nav ul li a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   color: rgb(204, 66, 12);
-  margin-bottom: 15px;
 }
 
 #conoceme {
   display: flex;
   position: relative;
-  left: 80px;
+  left: 100px;
   top: 30px;
 }
 
@@ -122,4 +120,7 @@ header nav ul li a:hover {
 
 .container {
   display: grid;
+  background: grey;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
 }
