@@ -124,3 +124,7 @@ header nav ul li a:hover {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px;
 }
+
+#img_yo {
+  box-shadow: 7px 7px 6px 0px rgba(50, 50, 50, 0.95);
+}
