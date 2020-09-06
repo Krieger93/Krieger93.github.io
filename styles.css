@@ -152,13 +152,38 @@ header nav ul li a:hover {
 #project2,
 #project3,
 #project4 {
-  border: 1px solid rgb(68, 32, 136);
+  border: 1.5px solid rgb(68, 32, 136);
 }
 
 #project1:hover,
 #project2:hover,
 #project3:hover,
 #project4:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.5s;
+}
+
+div a i {
+  opacity: 0;
+}
+
+#project1:hover i,
+#project2:hover i,
+#project3:hover i,
+#project4:hover i {
+  opacity: 1;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black !important;
+}
+
+#project1:hover div,
+#project2:hover div,
+#project3:hover div,
+#project4:hover div {
+  height: 300px;
+  position: relative;
 }
