@@ -1,5 +1,5 @@
 var i = 0;
-var txt = "Web Developer"; /* el texto */
+var txt = "Front-End Developer"; /* el texto */
 var speed = 50; /* La duracion en milisegundos */
 
 function typeWriter() {

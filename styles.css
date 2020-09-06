@@ -120,11 +120,45 @@ header nav ul li a:hover {
 
 .container {
   display: grid;
-  background: grey;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 300px;
 }
 
 #img_yo {
-  box-shadow: 7px 7px 6px 0px rgba(50, 50, 50, 0.95);
+  box-shadow: 0px 6px 7px 6px rgba(50, 50, 50, 0.95);
+}
+
+#project1 {
+  background-image: url(./img/Project1_Form.PNG);
+  background-size: 100% 100%;
+}
+
+#project2 {
+  background-image: url(./img/Project_2ProductLandingPage.PNG);
+  background-size: 100% 100%;
+}
+
+#project3 {
+  background-image: url(./img/Project3_ToDoList.PNG);
+  background-size: 100% 100%;
+}
+
+#project4 {
+  background-image: url(./img/Project4_WeatherApp.PNG);
+  background-size: 100% 100%;
+}
+
+#project1,
+#project2,
+#project3,
+#project4 {
+  border: 1px solid rgb(68, 32, 136);
+}
+
+#project1:hover,
+#project2:hover,
+#project3:hover,
+#project4:hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
