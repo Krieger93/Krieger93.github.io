@@ -19,9 +19,8 @@ ul {
 }
 
 body {
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
-  background-color: white;
 }
 
 ol,
@@ -42,7 +41,6 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.6rem;
   align-items: flex-end;
 }
 
@@ -61,7 +59,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
   font-size: 18px;
-  color: rgb(68, 32, 136);
   font-weight: 600;
 }
 
@@ -82,7 +79,6 @@ header nav ul li a:hover {
 .titulo_proyectos {
   font-family: "Alata", sans-serif;
   font-size: 40px;
-  color: rgb(68, 32, 136);
   font-weight: 600;
   margin-top: 150px;
   text-align: center;
@@ -98,7 +94,7 @@ header nav ul li a:hover {
   display: flex;
   position: relative;
   left: 100px;
-  top: 30px;
+  top: 50px;
 }
 
 #conoceme img {
@@ -116,16 +112,18 @@ header nav ul li a:hover {
   margin: 0 auto;
   position: relative;
   right: 150px;
+  bottom: 50px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 300px 300px;
-}
-
-#img_yo {
-  box-shadow: 0px 6px 7px 6px rgba(50, 50, 50, 0.95);
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 50px;
 }
 
 #project1 {
@@ -148,13 +146,6 @@ header nav ul li a:hover {
   background-size: 100% 100%;
 }
 
-#project1,
-#project2,
-#project3,
-#project4 {
-  border: 1.5px solid rgb(68, 32, 136);
-}
-
 #project1:hover,
 #project2:hover,
 #project3:hover,
@@ -163,7 +154,7 @@ header nav ul li a:hover {
   transition: 0.5s;
 }
 
-div a i {
+.container a i {
   opacity: 0;
 }
 
@@ -186,4 +177,13 @@ div a i {
 #project4:hover div {
   height: 300px;
   position: relative;
+}
+
+#contacto {
+  background-color: black;
+}
+
+#redes > a > i {
+  color: grey !important;
+  margin: 20px 30px 0px 30px;
 }
