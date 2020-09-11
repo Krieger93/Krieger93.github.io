@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GJJEJER Portafolio</title>
+    <title>GJ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
@@ -21,64 +22,66 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
   </head>
   <body>
     <header>
-      <h1 id="logo_texto">[GJ]</h1>
       <nav>
-        <ul>
-          <li><a href="#conoceme">CONOCEME</a></li>
-          <li><a href="#proyectos">PROYECTOS</a></li>
-          <li><a href="#contacto">CONTACTO</a></li>
-        </ul>
+        <div id="navbar">
+          <div id="logo">
+            <h1 class="logo">GJ</h1>
+          </div>
+          <div id="links">
+            <a href="#intro">Intro</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </div>
+        <div id="mobile-btn">
+          <a id="menu-btn" class="fa fa-bars fa-2x"></a>
+        </div>
       </nav>
+      <!-- Menu Celulares -->
+      <div id="mobile-menu" class="mobile-menu">
+        <ul class="mobile-links">
+          <li class="nav-list"><a href="#intro">Intro</a></li>
+          <li class="nav-list"><a href="#proyectos">Proyectos</a></li>
+          <li class="nav-list"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
     </header>
-    <section class="primera_vista" id="conoceme">
-      <img src="yo.jpg" alt="Fotografia de Gustavo Jejer" />
-      <section class="text_Conoceme">
+    <section id="intro">
+      <div id="foto">
+        <img id="pic" src="yo.jpg" alt="Fotografia Gustavo Jejer" />
+      </div>
+      <div id="presentacion">
         <h1 id="texto_principal">Gustavo Jejer [Portafolio]</h1>
         <p id="parrafo_principal"></p>
-        <div id="redes">
-          <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
-          <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
-          <a target="_blank" href="https://www.freecodecamp.org/gustavojejer"
-            ><i class="fab fa-free-code-camp fa-3x"></i
-          ></a>
-        </div>
-      </section>
-    </section>
-    <section id="proyectos">
-      <h1 class="titulo_proyectos">Proyectos</h1>
-      <br />
-      <div class="container">
-        <a
-          target="_blank"
-          href="https://github.com/Krieger93/Formulario_Info"
-          id="project1"
-          ><div><i class="fab fa-github fa-3x fa-inverse lolw"></i></div
-        ></a>
-        <a
-          href="https://github.com/Krieger93/-FreeCodeCamp-ProductLandingPage"
-          id="project2"
-          target="_blank"
-          ><div><i class="fab fa-github fa-3x fa-inverse lolw"></i></div
-        ></a>
-        <a
-          href="https://github.com/Krieger93/ToDoList"
-          id="project3"
-          target="_blank"
-          ><div><i class="fab fa-github fa-3x fa-inverse lolw"></i></div
-        ></a>
-        <a
-          href="https://github.com/Krieger93/WeatherApp"
-          id="project4"
-          target="_blank"
-          ><div><i class="fab fa-github fa-3x fa-inverse lolw"></i></div
+        <a href="#"><i class="fab fa-twitter fa-3x redes"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-3x redes"></i></a>
+        <a target="_blank" href="https://www.freecodecamp.org/gustavojejer"
+          ><i class="fab fa-free-code-camp fa-3x redes"></i
         ></a>
       </div>
     </section>
+    <section id="proyectos">
+      <a href="https://github.com/Krieger93/Formulario_Info" target="_blank"
+        ><div class="card"><img src="./img/Project1_Form.PNG" alt="" /></div
+      ></a>
+      <a
+        href="https://github.com/Krieger93/-FreeCodeCamp-ProductLandingPage"
+        target="_blank"
+        ><div class="card">
+          <img src="./img/Project_2ProductLandingPage.PNG" alt="" /></div
+      ></a>
+      <a href="https://github.com/Krieger93/ToDoList" target="_blank"
+        ><div class="card"><img src="./img/Project3_ToDoList.PNG" alt="" /></div
+      ></a>
+      <a href="https://github.com/Krieger93/WeatherApp" target="_blank"
+        ><div class="card">
+          <img src="./img/Project4_WeatherApp.PNG" alt="" /></div
+      ></a>
+    </section>
     <section id="contacto"></section>
-
-    <script src="app.js"></script>
   </body>
 </html>

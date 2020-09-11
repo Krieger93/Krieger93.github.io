@@ -1,72 +1,142 @@
-html,
-body {
+* {
   box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
 }
 
 body {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e9ebee;
 }
 
-ol,
-ul {
-  list-style: none;
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #fcfcfc;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-size: 25px;
+  font-weight: 200;
 }
 
-#logo_texto {
+.logo {
   font-family: "Permanent Marker", cursive;
   color: rgb(68, 32, 136);
 }
 
-header {
-  width: 100%;
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #0474bc;
+}
+
+/* =======================
+******* Menu hamburguesa celulares ******
+========================*/
+
+.mobile-menu {
+  display: block;
+  list-style-type: none;
+  background-color: rgba(243, 232, 243, 0.2);
+  float: right;
+  width: 200px;
+  padding: 5px 20px 50px 0;
+  border: 1px solid #eee;
+  right: 0;
+}
+
+.mobile-links li {
+  line-height: 2.8rem;
+}
+
+.mobile-btn {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  cursor: pointer;
+}
+
+.nav-list {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+nav {
+  justify-content: center;
+}
+
+#menu-btn {
+  position: relative;
+  float: right;
+  bottom: 65px;
+  right: 10px;
+}
+
+/* =======================
+******* FIN Menu hamburguesa celulares ******
+========================*/
+
+#intro {
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+#pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 2%;
+}
+
+#foto {
+  height: 50vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-header nav ul li {
-  list-style-type: none;
-  display: inline-flex;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: black;
-  padding: 0 1rem 0 1rem;
-  transition: 0.1s;
-}
-
-header nav ul li a:hover {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.primera_vista {
-  position: relative;
+#presentacion {
   text-align: center;
-  padding-top: 120px;
+  position: relative;
+  top: 15%;
+  right: 8%;
+}
+
+#parrafo_principal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: rgb(204, 66, 12);
 }
 
 #texto_principal {
@@ -77,167 +147,115 @@ header nav ul li a:hover {
   margin-bottom: 15px;
 }
 
-.titulo_proyectos {
-  font-family: "Alata", sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 150px;
-  text-align: center;
-}
-
-#parrafo_principal {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  color: rgb(204, 66, 12);
-}
-
-#conoceme {
-  display: flex;
-  position: relative;
-  left: 100px;
-  top: 50px;
-}
-
-#conoceme img {
-  position: relative;
-  bottom: 70px;
-  margin: 0 auto;
-  border-radius: 10%;
-  width: 200px;
-  height: 250px;
-  left: 30px;
-}
-
-.text_Conoceme {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  position: relative;
-  right: 150px;
-  bottom: 50px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 300px 300px;
-  max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  top: 50px;
-}
-
-#project1 {
-  background-image: url(./img/Project1_Form.PNG);
-  background-size: 100% 100%;
-}
-
-#project2 {
-  background-image: url(./img/Project_2ProductLandingPage.PNG);
-  background-size: 100% 100%;
-}
-
-#project3 {
-  background-image: url(./img/Project3_ToDoList.PNG);
-  background-size: 100% 100%;
-}
-
-#project4 {
-  background-image: url(./img/Project4_WeatherApp.PNG);
-  background-size: 100% 100%;
-}
-
-#project1:hover,
-#project2:hover,
-#project3:hover,
-#project4:hover {
-  opacity: 0.8;
-  transition: 0.5s;
-}
-
-.container a i {
-  opacity: 0;
-}
-
-#project1:hover i,
-#project2:hover i,
-#project3:hover i,
-#project4:hover i {
-  opacity: 1;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black !important;
-}
-
-#project1:hover div,
-#project2:hover div,
-#project3:hover div,
-#project4:hover div {
-  height: 300px;
-  position: relative;
-}
-
-#contacto {
-  background-color: black;
-}
-
-#redes > a > i {
+.redes {
   color: lightslategray !important;
   margin: 20px 30px 0px 30px;
 }
 
-@media (max-width: 1050px) {
-  body {
+#proyectos {
+  background: #fff;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-items: center;
+  overflow: visible;
+  padding-top: 15%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 400px;
+  margin: 1rem;
+  position: relative;
+  width: 400px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* MEDIA QUERYS  */
+/* Celular a Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #intro {
     width: 100%;
   }
-  #conoceme {
-    display: block;
+
+  #links,
+  .mobile-menu {
+    display: none;
   }
 
-  #conoceme img {
-    left: -100px;
+  .redes {
+    margin: 20px 10px 0px 10px;
   }
-
-  #texto_principal {
-    position: relative;
-    left: 75px;
+  #pic {
+    width: 200px;
+    height: 200px;
   }
 
   #parrafo_principal {
-    position: relative;
-    left: 75px;
+    font-size: 20px;
   }
 
-  #redes {
-    position: relative;
-    left: 70px;
+  #texto_principal {
+    font-size: 20px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .container {
-    display: grid;
+/* Tablet a escritorio */
+@media (min-width: 768px) {
+  #intro {
+    width: 100%;
+  }
+
+  .mobile-menu,
+  .mobile-btn,
+  .fa-bars {
+    display: none;
+  }
+
+  .redes {
+    margin: 20px 10px 0px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #intro {
+    width: 100%;
+  }
+
+  #pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  #parrafo_principal {
+    font-size: 20px;
+  }
+
+  #texto_principal {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 879px) {
+  #proyectos {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 1em;
     grid-row-gap: 100px;
-    justify-items: center;
-  }
-  #project1,
-  #project2,
-  #project3,
-  #project4 {
-    height: 200px;
-    width: 60%;
-    margin: 0px 0px;
-  }
-  #project1:hover div,
-  #project2:hover div,
-  #project3:hover div,
-  #project4:hover div {
-    height: 200px;
   }
 }
